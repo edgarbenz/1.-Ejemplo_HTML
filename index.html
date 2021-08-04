@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twitter</title>
+</head>
+<body>
+    <div id= "wrapper" style="background-color: yellow; padding: 20px">
+        <div>
+            <a href="https://keepcoding.io">Ir a KeepCoding</a>
+        </div>
+        <div id= "div2" style="background-color: chocolate;">
+            <button>Click me</button>
+        </div>
+    </div>
+    <script>
+        const wrapper = document.querySelector("#wrapper");
+        wrapper.addEventListener("click", evento => {
+            console.log("1. CLICK en el wrapper");
+           // evento.stopPropagation();
+        },true);
+
+        const boton=  document.querySelector("button");
+        boton.addEventListener("click",  evento => {
+            console.log("3. click en el boton");
+        }, true);
+
+        const div2= document.querySelector("#div2");
+        div2.addEventListener("click", evento => {
+            console.log("2. click en el div que envuelve al boton")
+        }, true)
+    </script>
+</body>
+</html>

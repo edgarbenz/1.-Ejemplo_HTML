@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de DropZONE</title>
+</head>
+<body>
+    <div id="drop-zone" style="background-color: yellow; padding: 50px;">
+        <p>Suelta aqui tus archivos</p>
+            <input type="file" style= "background-color: chartreuse;">
+    </div>
+    <script>
+        const dropZone= document.querySelector("#drop-zone");
+            dropZone.addEventListener("dragenter", ev => {console.log("dragenter")
+        });
+
+    </script>
+    
+</body>
+</html>
